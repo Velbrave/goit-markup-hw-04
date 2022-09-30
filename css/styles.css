@@ -81,7 +81,7 @@ button {
 
 body {
     color: var(--title-text-color);
-    background-color: var(--first-bg-color);
+    background-color: var(--primary-white-color);
     font-family: Roboto,sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -243,7 +243,7 @@ fill: var(--accent-color);
 /* --- section-description --- */
 
 .section-description{
-    background-color: var(--first-bg-color);
+    background-color: var(--primary-white-color);
 }
 
 .section-description-container{
@@ -311,7 +311,7 @@ fill: var(--accent-color);
 /* --------  section-profile ------- */
 
 .section-profile {
-    background-color: var(--first-bg-color);
+    background-color: var(--primary-white-color);
 }
 
 .section-profile-container{
@@ -402,8 +402,6 @@ fill: var(--accent-color);
     justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
-    
-
 }
 
 
@@ -426,6 +424,54 @@ fill: var(--accent-color);
 
 /* ------------------------------------- */
 
+.section-clients {
+    background-color: var(--primary-white-color)
+}
+
+.section-clients-title{
+    padding-top: 94px;
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-page{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+
+.list-clients {
+    width: 170px;
+    height: 92px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;   
+}
+
+.icon-link-clients{
+    display: flex;
+    margin: 0 auto;
+    fill: #AFB1B8;
+}
+
+.icon-link-clients:focus,
+.icon-link-clients:hover {
+    fill: var(--accent-color);
+}
+
+.list-clients:focus,
+.list-clients:hover {
+    border-color: var(--accent-color);
+}
+
 /* ----------- footer ------------ */
 
 .page-footer {
@@ -433,13 +479,11 @@ fill: var(--accent-color);
 }
 
 .page-footer-container{
+    display: flex;
+    column-gap: 70px;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 16px;
-}
-
-.logo-desc-item{
-    margin-bottom: 20px;
 }
 
 .logo-desc {
@@ -478,7 +522,51 @@ fill: var(--accent-color);
 .addres .addres-link a:focus {
     color: var(--accent-color);
 }
+
+
+.footer-container-title {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    width: 206px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.list-footer {
+    display: flex;
+    column-gap: 10px;
+}
+
+.item-list-footer {
+    display: flex;
+}
+
+.item-link-footer {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.item-link-footer:hover,
+.item-link-footer:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+
 /* ---------------------------------------- */
+
+
 
 /* ----------- PORTFOLIO --------------- */
 
