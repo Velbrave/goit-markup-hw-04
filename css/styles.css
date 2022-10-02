@@ -447,7 +447,7 @@ fill: var(--accent-color);
     padding-bottom: 94px;
 }
 
-.list-clients {
+.link-clients {
     display: flex;
     width: 170px;
     height: 92px;
@@ -462,14 +462,15 @@ fill: var(--accent-color);
     fill: #AFB1B8;
 }
 
-.clients-page .list-clients:hover,
-.clients-page .list-clients:focus {
-   border-color: var(--accent-color);
+.link-clients:hover,
+.link-clients:focus {
+  border-color: var(--accent-color);
 }
 
-.link-clients .icon-link-clients:hover,
-.link-clients .icon-link-clients:focus {
+.link-clients:hover .icon-link-clients,
+.link-clients:focus .icon-link-clients {
     fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 
@@ -488,6 +489,7 @@ fill: var(--accent-color);
 }
 
 .logo-desc {
+    display: block;
     margin-bottom: 20px;
     color: var(--accent-color);
     font-family: 'Raleway';
@@ -514,6 +516,7 @@ fill: var(--accent-color);
     font-style: normal;
     text-decoration: none;
 }
+
 .addres .addres-map a:hover,
 .addres .addres-map a:focus {
     color: var(--accent-color);
@@ -617,14 +620,22 @@ fill: var(--accent-color);
 .hero-page{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    column-gap: 30px;
 }
 
 .hero-page-item{
+    width: 370px;
+    height: 406px;
+    margin-bottom: 30px;
     flex-basis: calc((100% - 6 * 30px) / 9);
 }
 
+.hero-page-item:nth-child(n + 7) {
+    margin-bottom: 0px;
+}
+
 .hero-page-text{
+    width: 370px;
     padding: 20px 24px;
     border: 1px solid var(--primary-border-color);
     border-top: none;
@@ -634,7 +645,7 @@ fill: var(--accent-color);
     margin-bottom: 4px;
 }
 
-.hero-page .page-title {
+.link-meta .page-title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -642,9 +653,18 @@ fill: var(--accent-color);
     letter-spacing: 0.06em;
 }
 
-.hero-page .about-text {
+.link-meta .about-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    color: var(--title-text-color);
 }
+
+.link-meta:hover,
+.link-meta:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
